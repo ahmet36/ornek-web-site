@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CREATIVE AKADEMİ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <style>
+#menu-area > ul > li{
+            text-decoration: none;
+            color: black;
+            display: inline-block;
+        }
+        #menu-area{
+            position: absolute;
+            top: 65px;
+            left: 320px;
+        }
+        #menu-area a{
+            text-decoration: none;
+            color: #05364d;
+            padding: 0px 15px;
+            font-size: 20px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #menu-area a:hover{
+            color: red;
+        }
+  </style>
+  <body>
+    <!-- PAGE 1 -->
+    <div class="shadow-box"></div>
+    <video autoplay muted loop id="page-acilis-video">
+      <source src="network-cizgiler.mp4" type="video/mp4" id="page-video">
+    </video>
+    <div class="logo-area">
+    <div class="logo-radius"></div>
+    <img src="creative logo.png" alt="Bilişim Adası Logo" title="Bilişim Adası" id="logo"></img>
+    <h4 id="page-name">CREATIVE AKADEMİ</h4>
+        <div id="menu-area">
+          <ul id="menu">
+              <li><a href="bilişimadası.html">ANASAYFA</a></li>
+              <li id="hover-menu-hover"><a href="kategoriler.html">HAKKIMIZDA</a>
+              <ul id="hover-menu">
+                  <li><a href="#">VİZYON</a></li>
+                  <li><a href="#">MİSYON</a></li>
+              </ul>
+              </li>
+              <li><a href="hakkimizda.html">KATEGORİLER</a></li>
+              <li><a href="iletisim.html">İLETİŞİM</a></li>
+              </button>
+          </ul>
+      </div>
+      <div class="page1-header">
+      <h2 class="header-h2">HOŞ GELDİNİZ</h2>
+      <script>
+
+        var text="<font size=90><b>CREATIVE AKADEMİ</b></font>" // Yazı //
+        var speed=100 // Hız //
+
+        if (document.all||document.getElementById){
+        document.write('<span id="highlight">' + text + '</span>')
+        var storetext=document.getElementById? document.getElementById("highlight") : document.all.highlight
+        }
+        else
+        document.write(text)
+        var hex=new Array("00","14","28","3C","50","64","78","8C","A0","B4","C8","DC","F0")
+        var r=1
+        var g=1
+        var b=1
+        var seq=1
+        function changetext(){
+        rainbow="#"+hex[r]+hex[g]+hex[b]
+        storetext.style.color=rainbow
+        }
+        function change(){
+        if (seq==6){
+        b--
+        if (b==0)
+        seq=1
+        }
+        if (seq==5){
+        r++
+        if (r==12)
+        seq=6
+        }
+        if (seq==4){
+        g--
+        if (g==0)
+        seq=5
+        }
+        if (seq==3){
+        b++
+        if (b==12)
+        seq=4
+        }
+        if (seq==2){
+        r--
+        if (r==0)
+        seq=3
+        }
+        if (seq==1){
+        g++
+        if (g==12)
+        seq=2
+        }
+        changetext()
+        }
+        function starteffect(){
+        if (document.all||document.getElementById)
+        flash=setInterval("change()",speed)
+        }
+        starteffect()
+        </script>
+        <div class="page1-social-media">
+          <a href="#" id="social-link1"><i class="fa fa-facebook" aria-hidden="true"></i>‏‏‏‏<font>FACEBOOK</font>‏‏‏‏</a><br>
+          <a href="#" id="social-link2"><i class="fa fa-instagram" aria-hidden="true"></i><font>INSTAGRAM</font></a><br>
+          <a href="#" id="social-link3"><i class="fa fa-twitter" aria-hidden="true"></i><font>TWITTER</font></a><br>
+          <a href="#" id="social-link4"><i class="fa fa-youtube-play" aria-hidden="true"></i><font>YOUTUBE</font></a><br>
+          </div>
+        </div>
+      </div
+
+
+
+        <!-- FOOTER ALANI
+        <div id="footer">
+          <div class="top-footer">
+
+          </div>
+        </div>
+         -->
+    <script>
+      document.addEventListener("contextmenu",function (pageVideo) {
+        pageVideo.preventDefault();
+      });
+    </script>
+  </body>
+</html>
